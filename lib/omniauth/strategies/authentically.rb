@@ -6,7 +6,7 @@ module OmniAuth
 
       option :name, 'authentically'
       option :client_options, {
-      	:site => 'http://authentically.heroku.com',
+      	:site => 'http://localhost:3000',
       	:authorize_path => '/oauth/authorize'#,
       	#:token_path => '/oauth/access_token'
       }
@@ -17,7 +17,6 @@ module OmniAuth
         {
         	"email" => raw_info['email'],
         	'nickname' => raw_info['email'].split('@')[0],
-        	'role' => raw_info['role'],
         	'level' => raw_info['level']
         }
       end
