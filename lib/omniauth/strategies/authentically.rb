@@ -16,7 +16,9 @@ module OmniAuth
       info do
         {
         	"email" => raw_info['email'],
-        	'nickname' => raw_info['email'].split('@')[0],
+					'image' => raw_info['image'],
+					'first_name' => raw_info['first_name'],
+					'last_name' => raw_info['last_name'],
         	'level' => raw_info['level']
         }
       end
