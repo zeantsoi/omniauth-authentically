@@ -19,6 +19,7 @@ module OmniAuth
 					'image' => raw_info['image'],
 					'first_name' => raw_info['first_name'],
 					'last_name' => raw_info['last_name'],
+					'name' => "#{raw_info['first_name']} #{raw_info['last_name']}",
         	'level' => raw_info['level']
         }
       end
