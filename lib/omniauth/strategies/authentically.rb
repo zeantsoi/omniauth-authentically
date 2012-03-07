@@ -1,4 +1,4 @@
-require 'omniauth-oauth'
+#require 'omniauth-oauth'
 
 module OmniAuth
 	module Strategies
@@ -20,7 +20,9 @@ module OmniAuth
 					'first_name' => raw_info['first_name'],
 					'last_name' => raw_info['last_name'],
 					'name' => "#{raw_info['first_name']} #{raw_info['last_name']}",
-        	'level' => raw_info['level']
+        	'level' => raw_info['level'],
+        	'test' => 'yep',
+        	'access_token' => access_token
         }
       end
 
