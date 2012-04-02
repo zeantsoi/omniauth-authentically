@@ -6,7 +6,7 @@ module OmniAuth
 
       option :name, 'authentically'
       option :client_options, {
-      	:site => "http://#{Rails.env.development? ? 'localhost:3000' : 'authentically.heroku.com'}",
+      	:site => "http://#{Rails.env.development? ? 'localhost:3000' : 'beta.authentical.ly'}",
       	:authorize_path => '/oauth/authorize'#,
       	#:token_path => '/oauth/access_token'
       }
